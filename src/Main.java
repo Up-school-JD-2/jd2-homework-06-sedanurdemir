@@ -70,5 +70,19 @@ public class Main {
                 product.getProductStatus()));
     System.out.println("Active products :");
     filteredProducts.forEach(System.out::println);
+    System.out.println();
+    
+    System.out.println("Active product sorted with price");
+    
+    manager.getActiveProductsSortedByPrice().forEach(System.out::println);
+   
+    System.out.println();
+    System.out.println("Average price in category");
+    System.out.println(manager.calculateAveragePriceInCategory("Category 2"));
+    System.out.println();
+    
+    System.out.println(manager.getCategoryPriceSum());
   }
+  
+ 
 }
